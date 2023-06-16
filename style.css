@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    opacity: 0.9;
+}
+
+/* h1, h2, h3, h4, h5, h6, p {
+    opacity: 0.9;
+} */
+
+header {
+    background-color: black;
+    position: fixed;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+    margin: 10px;
+    /* add a flex-shrink for mobile?? have it be less than 1 so that it shrinks more slowly? all header content is important, though, so maybe they should all maintain default shrink? */
+}
+
+#nav-list {
+    display: flex;
+    list-style-type: none;
+    text-decoration: underline;
+    align-items: center;
+}
+
+#nav-list li {
+    margin: 0px 10px;
+}
+
+main{
+    position: relative;
+    top: 69px;
+    z-index: 1;
+}
+
+#hero-container {
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* background image in this div is not shrinking. how to shrink it with flex-shrink?
+it's a bg image rather than a div itself, so maybe that's why */
+
+#hero {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*1gqdsnm*_ga*MjEwNTEwODUyOS4xNjgxNDA2NzQz*_ga_3LRZM6TM9L*MTY4NjkzMDc3Mi44OS4xLjE2ODY5MzA3ODEuNTEuMC4w');
+    /* should height and width be max-height and max-width for when screen shrinks? */
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+#hero-text {
+    background-color: black;
+    width: 100%;
+}
+
+#hero-text h2, #sub-hero h2 {
+    margin: 10px;
+}
+
+#hero-text h4, #sub-hero h4 {
+    margin: 5px;
+}
+
+#sub-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#sub-hero-images {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1000px;
+    flex-direction: horizontal;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.tea-of-month {
+    margin: 10px 0px;
+}
+
+#sub-hero-images img {
+    max-height: 200px;
+    max-width: 300px;
+    margin: 0px 10px;
+}
+
