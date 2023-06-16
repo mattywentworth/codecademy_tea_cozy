@@ -45,6 +45,20 @@ header img {
     margin: 0px 10px;
 }
 
+#nav-list a {
+    color: white;
+    padding: 5px;
+}
+
+#nav-list a:hover {
+    color: black;
+    background-color: white;
+}
+
+#nav-list a:active {
+    background-color:darkseagreen;
+}
+
 main{
     position: relative;
     top: 69px;
@@ -112,3 +126,61 @@ it's a bg image rather than a div itself, so maybe that's why */
     margin: 0px 10px;
 }
 
+/* change bg image to a div and then flex shrink it? */
+#locations-container {
+    margin: 40px auto 40px auto;
+    padding: 0px 0px 100px 0px;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*o56lup*_ga*MjEwNTEwODUyOS4xNjgxNDA2NzQz*_ga_3LRZM6TM9L*MTY4Njk0MzUxMS43MC4xLjE2ODY5NDM1OTYuNTkuMC4w');
+    /* height isn't functioning correctly? change bg image to div, or increase bottom margin of locations container/info? */
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#locations-container h2 {
+    margin: 60px 0px 15px 0px;
+}
+
+#locations-info {
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.location {
+    background-color: black;
+    width: 300px;
+    margin: 10px 20px;
+    opacity: 1.0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.location h3, .location p {
+    margin: 20px;
+}
+
+
+
+footer {
+    position: relative;
+    top: 69px;
+}
+
+#contact-info {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#copyright {
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    font-style: none;
+}
